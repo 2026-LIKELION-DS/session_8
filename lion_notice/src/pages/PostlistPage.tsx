@@ -32,12 +32,7 @@ export default function PostListPage() {
       </div>
       <div className="post-list">
         {mockData.map((post) => (
-          <PostCard
-            key={post.id}
-            id={post.id}
-            title={post.title}
-            content={post.content}
-          />
+          <PostCard key={post.id} id={post.id} title={post.title} />
         ))}
       </div>
     </section>
