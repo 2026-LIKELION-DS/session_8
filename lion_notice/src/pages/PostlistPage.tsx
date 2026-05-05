@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import PostCard from "../components/PostCard";
 
 const mockData = [
@@ -14,10 +16,20 @@ const mockData = [
 ];
 
 export default function PostListPage() {
+  const navigate = useNavigate();
+
   return (
     <section>
-      <h2>게시글 목록</h2>
+      <div className="page-header">
+        <h2>게시글 목록</h2>
 
+        <button
+          className="outline-button"
+          onClick={() => navigate("/posts/new")}
+        >
+          공지 작성하기
+        </button>
+      </div>
       <div className="post-list">
         {mockData.map((post) => (
           <PostCard

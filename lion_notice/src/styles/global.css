@@ -23,17 +23,68 @@ a {
   color: inherit;
 }
 
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.outline-button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-weight: 600;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.post-form input,
+.post-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.post-form button {
+  align-self: flex-end;
+}
+
 .post-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .post-card {
   display: block;
   padding: 20px;
   background: white;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid #ddd;
 }
 
@@ -49,5 +100,5 @@ a {
 .post-detail {
   padding: 24px;
   background: white;
-  border-radius: 12px;
+  border-radius: 10px;
 }
