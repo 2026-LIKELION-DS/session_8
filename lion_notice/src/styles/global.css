@@ -102,3 +102,7 @@ button {
   background: white;
   border-radius: 10px;
 }
+
+.post-detail p {
+  white-space: pre-line;
+}
