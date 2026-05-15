@@ -5,7 +5,7 @@ import PostCard from "../components/PostCard";
 const mockData = [
   {
     id: 1,
-    title: "8차 리액트 세션",
+    title: "8차 리액트 연동 세션",
     content: "마지막 세션..ㅜㅜ 수고 많앗뜨...",
   },
   {
